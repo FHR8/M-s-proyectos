@@ -1,0 +1,310 @@
+@charset "utf-8";
+/*Aquí subimos al proyecto las 2 fuentes de google fonts utilizadas*/
+@font-face {
+    font-family: permanent_maker;
+    src: url("../font/Permanent_Marker/PermanentMarker-Regular.ttf");
+    font-style:normal;
+    font-weight:400;
+}
+@font-face {
+    font-family: Oswald;
+    src: url("../font/Oswald/Oswald-VariableFont_wght.ttf");
+    font-style: normal;
+    font-weight: 400;
+}/*Reseteamos márgenes*/
+*{
+   margin: 0px;
+   padding: 0px; 
+}/*Formato al cuerpo con una foto de fondo que nos perseguirá durante toda la página ya que está fija*/
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../img/prueba.jpg");
+    font-family: Oswald;
+}/*Cabecera con degradado lineal*/
+header{
+    padding: 1% 0%;
+    background:linear-gradient(#1c0d02, #6a5d4d, #755d48);
+}
+p{
+    font-family: oswald;
+    font-size: 22px;
+}/*Título, con borde redondeado y sombras para hacerlo más vistoso*/
+h1{
+    margin: 2% 18% 7% 25%;
+    background-color: silver;
+    font-family: permanent_maker;
+    font-size: 72px;
+    text-align: center;
+    padding: 1%;
+    border-radius: 25%;
+    color: #1c0d02;
+    opacity:0.7;
+    text-shadow: #755d48 6px 6px 6px;
+    box-shadow: #755d48 6px 6px 6px 2px inset;
+}
+h3{/*La mayoría de mis subtitulos serán con h3*/
+    font-family: permanent_maker;
+    font-size: 24px;
+    text-shadow: #755d48 3px 3px 3px;
+}/*Realización del menú*/
+nav ul li{
+    display: inline;
+    font-family: permanent_maker;
+}
+nav ul li a{
+    font-weight: bold;
+    text-align: justify;
+    margin-left: 3%;
+    padding: 1% 5%;
+}/*Cambios al pasar por encima de una de las opciones del menú*/
+nav ul li a:hover{
+    text-align: justify; 
+    background-color: silver;
+}
+.inicio{
+    color: firebrick; /*En el menú marca en que página nos encontramos*/
+}
+/*Aquí colocamos los iconos de las redes sociales*/
+a{
+    text-decoration: none;
+    color: black;
+}
+.flexible{
+    display: flex;
+}
+.flexible ul li{
+    display: inline-block;
+}
+/*En el main se encuentra casi toda la página. El margen es tan grande para que se visualize el fondo del body*/
+main{
+    background:linear-gradient(#1c0d02, #6a5d4d, #755d48 );
+    width: 95%;
+    padding: 1%;
+    margin: 30% auto;
+}
+/*Los articulos comunes tienen un ancho concreto*/
+article{
+    background-color: silver;
+    margin: 0% 1% 1% 0%;
+    border: 1px solid black;
+    width: 49%;
+    padding-bottom: 1%;
+    text-align: center;
+}/*Los artículos de la intro tienen un ancho que duplica a los comunes*/
+.intro{
+    width: 98.8%;
+}
+.intro p, article p{
+    padding: 1%;
+}
+article section{
+    background-color: lavender;
+}/*La información del footer irá centrada*/
+footer{
+    background-color: #6a5d4d;
+    text-align: center;
+}/*Toda la página tiene un poco de opacidad para que muestre las sombras de la imagen que arrastramos.*/
+header, main, footer{
+    opacity: 0.92;
+}/*Las imagenes van redondeadas para hacer un efecto interesante*/
+img{
+    margin: 1%;
+    border-radius: 8%;
+}/*Según en que apartado se encuentre la foto, requerirán unas medidas de alto o ancho concretas para no salirse*/
+.introfoto, .apartadofoto{
+    height: 60vh;
+}
+.apartadofoto{
+    width: 98%;
+}/*Aquí configuramos los "botones de la intro que nos llevan a cada una de las páginas según su descripción*/
+.enlace{
+    color: antiquewhite ;
+    border: 3px solid gainsboro;
+    border-radius: 30%;
+    background-color: #1c0d02;
+    padding: 1%;
+}
+.enlace:hover{
+    color: goldenrod ;
+    background-color: firebrick;
+}
+/*De aquí para arriba tratamos la pagina de inicio, para abajo los retoques para el resto de páginas*/
+form{
+    margin:10% auto;
+    width: 50%;
+    color: black;
+    opacity:1;
+    background-image: url("../img/fondoFormulario.png"); 
+    font-family: Oswald;
+    font-size: small;
+}/*Formulario simple con el fondo de unos cascos.*/
+fieldset{
+    width: 64%;
+    border: none;
+    background-color: #755d48 ;
+    opacity: 0.88;
+}/*Tenemos 3 fieldset, uno central y dos laterales. Estos últimos sólo son de adorno*/
+.uno{
+    width: 18%;
+    background-color: #755d48;
+    height: auto;
+}
+.fotografias{
+    width: 90%; 
+}/*Las fotografias del formulario son redondas y van adaptadas a cada uno de los laterales.*/
+.photo, .photo2{
+    width: 100%;
+    border-radius: 100%;
+    margin: 99% 0% 20% 12%;
+    border: none;
+}
+.photo2{
+    margin:99% 12% 20% 0%;
+}
+label, input{
+    opacity: 1.0;
+}/*En cuanto a las etiquetas y los botones irán unos debajo de los otros. El cursor pasará a ser la mano al pasar por un imput.*/
+label{
+    display: block;
+    margin: 3% 10% 2% 18%;
+    font-size: 24px;
+    font-weight: bold;
+}
+input{
+    margin-left: 10%;
+    cursor: pointer;
+}
+input[type="text"], input[type="email"], input[type="password"]{
+    height: 4vh;
+    width: 65%;
+    margin-top: 0.5%;
+    margin-left: 18%;
+    border-radius: 5%;
+    background-color: lavender;
+    border: 3px solid black;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+    outline: 3px solid firebrick;
+}/*Input type submit, reset, radio y checkbox irán un poco de forma diferente*/
+input[type="submit"]{
+    margin-left: 30%;
+}
+input[type="submit"], input[type="reset"]{
+    margin-top:2%;
+    margin-bottom: 4%;
+    padding: 2% 4%;
+    border: 3px solid black;
+    border-radius:15%;
+    font-weight: bold;
+}
+input[type="checkbox"], input[type="radio"]{
+    width: 25px;
+    height: 25px;
+    margin: 0%;
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: silver;
+}/*Al h2 que tengo le doy un formato un poco diferente a los anteriores h*/
+h2{ 
+    text-align: center;
+    margin: 5% 10% 0% 10%;
+    font-size: 26px;
+    background-color: gainsboro;
+    font-family: Permanent_maker;
+    border-radius: 8%;
+    color: #1c0d02;
+}
+table{
+    font-family: permanent_maker;
+    margin: 2% auto;
+    font-size: 18px;
+    background-color: gainsboro;
+}
+.motito{
+    width: 25px;
+    height: 25px;
+}
+/*Tablet*/
+@media only screen and (max-width: 980px) {
+    .introfoto{
+        height: 30vh;
+    }
+    .apartadofoto{
+        height: 40vh;
+    }
+    h1{
+        margin: 2% 0% 7% 30%;
+        font-size: 24px;
+    }
+    .sociales{
+        display:none;
+    }
+    nav ul li a{
+        margin-left: 3%;
+        padding: 1% 1%;
+    }
+    .fotografias{
+        display: none;
+    }
+    fieldset{
+        width: 100%;
+    }
+    .uno{
+        width: 0%;
+    }
+    h2{
+        margin: 5% 10% 0% 10%;
+        font-size: 20px;
+    }
+    label{
+        margin: 3% 10% 2% 18%;
+        font-size: 18px;
+    }
+    input[type="text"], input[type="email"], input[type="password"]{
+        height: 3vh;
+    }
+    input[type="submit"]{
+        margin-left: 18%;
+    }
+    input[type="checkbox"], input[type="radio"]{
+        width: 18px;
+        height: 18px;
+        margin: 0%;
+    }
+}
+/*Movil*/
+@media only screen and (max-width: 480px) {
+    h1{
+        margin: 2% 0% 7% 15%;
+        font-size: 24px;
+    }
+    nav ul li a{
+        margin-left: 0.5%;
+        padding: 0.5 0.5%;
+    }
+    .apartadofoto{
+        height: 30vh;
+    }
+    .introfoto{
+        height: 28vh;
+    }
+    h2{
+        font-size: 16px;
+    }
+    label{
+        font-size: 14px;
+    }
+    input[type="text"], input[type="email"], input[type="password"]{
+        height: 2vh;
+    }
+    input[type="submit"]{
+        margin-left: 15%;
+    }
+    input[type="checkbox"], input[type="radio"]{
+        width: 12px;
+        height: 12px;
+    }
+}

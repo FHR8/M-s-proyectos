@@ -1,0 +1,103 @@
+@charset "utf-8";
+/*Sólo para las 3 paginas intermedias con formato similar*/
+*{
+   margin: 0px;
+   padding: 0px; 
+}
+body{
+    background-image: url("../img/prueba2.jpg");
+}
+h3{
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 8%;
+}
+p{
+    font-size: 19px;
+}
+nav ul li a:hover{
+    text-align: justify; 
+    background-color: silver;
+}
+main{
+    margin: 30% auto;
+}
+article{
+    background:linear-gradient(#1c0d02, #6a5d4d, #755d48);
+}
+.intro{/*Importante los ajustes de tamaño de las cajas*/
+    width:100%;
+    padding-top: 1.5%;
+}
+.imagen{
+    width:100%;
+    color: whitesmoke;
+    border-color: 3px solid white;
+}
+.imagen p, .intro h3{
+    background-color: firebrick;
+    margin:1% 30%;
+    border-radius: 20%;
+    font-size: 24px;
+}
+article section{
+    border-radius: 8%;
+    background-color: inherit;
+    margin: 0% auto;
+}
+.parrafo{
+    background-color: silver;
+    margin:3%;
+}
+.fotografia{
+    width: 98%;
+    border-radius: 1%;
+    margin-left: 1%;
+}
+img{
+    margin: 0%;
+}
+table{
+    border-collapse: collapse;
+}/*En este caso añadimos un submenú al pie*/
+.pie{ 
+    margin-left: 15%;
+}
+.pie li{
+    background-color: gainsboro;
+    border:1px solid black;
+    border-radius:8%;
+    margin-left:10%;
+    list-style:none;
+    margin-top:1%;
+    padding:0.5% 1%;
+}
+.pie li:hover{
+    background-color: lavender;
+}
+h4, h5, address{
+    margin-top: 1%;
+}
+/*Tablet*/
+@media only screen and (max-width: 980px) {
+   
+}
+/*Movil*/
+@media only screen and (max-width: 480px) {
+    .pie{
+        margin-left: 0.5%;
+    }
+    .pie li{
+        
+        margin-left:0.5%;
+        list-style:none;
+        margin-top:1%;
+        padding:0.5% 1%;
+    }
+}
+
+
+
+
+
+

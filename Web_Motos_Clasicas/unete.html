@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uneté</title>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css"> 
+    <link rel="shortcut icon" href="img/moto.png">
+    <script src="Jquery/jquery-1.6.3.min.js"></script>
+    <script>
+        $ (function() {
+            $("body").hide().fadeIn(2500);
+        }) 
+    </script>
+    <script type="text/javascript">
+        function validar(){
+         var emilio=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+         if(!(emilio.test(correo.value))){
+             alert("El correo electrónico introducido no es válido");
+             correo.focus();
+             return false;
+         }
+         if(correo2.value!=correo.value){
+             alert("El correo y la confirmación no coinciden");
+             correo2.focus();
+             return false;
+         }
+         if(usuario.value.length<8){
+             alert("El nombre de usuario debe ser más largo (al menos 8 caracteres)");
+             usuario.focus();
+             return false;
+         }
+         var clave=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,14}$/
+         if(!(clave.test(contrase.value))){
+             alert("La contraseña debe contener entre 8 y 14 caracteres, y estos ser al menos un número, una letra, y un caracter especial")
+             contrase.focus();
+             return false;
+            }
+         if(contrase.value!=confirmar.value){
+             alert("La contraseña y la confirmación no son iguales");
+             contrase.focus();
+             return false;
+         }
+         if(condiciones.checked==false){
+             alert("Debe aceptar las condiciones de uso");
+             condiciones.focus();
+             return false;
+         }
+         alert("El formulario ha sido enviado correctamente");
+         return true;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="flexible">
+        <h1>Motoclassic Salamanca</h1>
+            <ul class="sociales">
+                <li><a href="https://twitter.com/" target="_blank"><img src="img/gorjeo.png" alt="Ir a Twitter" title="Accede a nuestro Twitter"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Ir a Facebook" title="Accede a nuestro Facebook"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Ir a Instagram" title="Accede a nuestro Instagram"></a></li>
+                <li><a href="https://linkedin.com/" target="_blank"><img src="img/linkedin.png" alt="Ir a linkedin" title="Accedea a nuestro linkedin"></a></li>
+            </ul>
+        </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Ir a inicio"> INICIO </a></li>
+            <li><a href="montesa.html" title="Ir a marcas"> MONTESA </a></li>
+            <li><a href="derbi.html" title="Ir a motos"> DERBI </a></li>
+            <li><a href="otras.html" title="Ir a eventos"> OTRAS </a></li>
+            <li><a class="inicio"> UNETÉ </a></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="flexible">
+        <form method="get" id="motos" onsubmit="return validar()">
+            <div class="flexible">
+            <fieldset class="uno"><div class="fotografias"><img class="photo" src="img/formulario/lateral1.jpg" alt="foto1">
+                <img class="photo" src="img/formulario/lateral2.jpg" alt="foto2"><img class="photo" src="img/formulario/lateral3.jpg"alt="foto3">
+                <img class="photo" src="img/formulario/lateral4.jpg"alt="foto4"></div></fieldset>
+            <fieldset>
+            <h2><img class="motito" src="img/moto.png"> Registraté y disfruta de todas las ventajas de nuestro club</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" required >
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo">
+            <label for="correo2">Confirmación del correo electrónico:</label>
+            <input type="email" id="correo2">
+            <label for="usuario">Nombre de Usuario:</label>
+            <input type="text" id="usuario">
+            <label for="contrase">Contraseña:</label>
+            <input type="password" id="contrase">
+            <label for="confirmar">Confirmar contraseña:</label>
+            <input type="password" id="confirmar">
+            <label for="suscripcion">¿Deseas suscribirte a nuestras alertas para estar informado de lo mejor en motos clásicas?</label>
+            <label><input type="radio" name="suscripcion" id="suscripcion" value="0" checked> No deseo recibir alertas</label>
+            <label><input type="radio" name="suscripcion" id="suscripcion" value="1"> Deseo recibir alertas SEMANALES</label>
+            <label><input type="radio" name="suscripcion" id="suscripcion" value="2"> Deseo recibir alertas MENSUALES</label>
+            <label><input type="radio" name="suscripcion" id="suscripcion" value="3"> Deseo recibir TODAS LAS ALERTAS</label>
+            <label><input type="checkbox" name="condiciones" id="condiciones"> Acepto las condiciones de uso</label>
+            <input type="submit" id="enviar" value="enviar">
+            <input type="reset" id="borrar" value="borrar">
+            </fieldset>
+            <fieldset class="uno"><div class="fotografias"><img class="photo2" src="img/formulario/lateral5.jpg" alt="foto5">
+                <img class="photo2" src="img/formulario/lateral6.jpg" alt="foto6"><img class="photo2" src="img/formulario/lateral7.jpg" alt="foto7">
+                <img class="photo2" src="img/formulario/lateral8.jpg" alt="foto8"></div></fieldset>
+        </div>
+        </form>
+    </div>
+    <footer><h4>Fernando Herrero Rodríguez</h4><h5>Tódos los derechos reservados</h5><address>Doñinos de Salamanca</address>
+    </footer>
+</body>
+</html>
+<!--https://codepen.io/siiron/pen/YPKXwW*/-->

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\models",
+    "\\src\\static",
+    "\\src\\templates",
+    "\\src\\templates\\auth"
+  ],
+  "SelectedNode": "\\src\\templates\\auth\\login.html",
+  "PreviewInSolutionExplorer": false
+}

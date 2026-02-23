@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    background-image: url("../../static/img/fondo.jpg");
+    background-size: cover;
+    margin: auto;
+}
+form{
+    width: 30%;
+    margin: 3% 10%;
+    text-align: left;
+}
+fieldset{
+    border: 1px solid black;
+    border-radius: 8%;
+    background-color: aquamarine;
+}
+h1{
+    background-color: aliceblue;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 52px;
+}
+h1, input{
+    text-align: center;
+}
+p{
+    margin:5%
+}
+label{
+    margin-left: 10%;
+    border-radius: 8%;
+    padding: 4%;
+}

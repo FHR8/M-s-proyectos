@@ -1,0 +1,20 @@
+{% extends './base.html' %}
+
+{% block title %}Registro{% endblock %}
+
+{% block body %}
+<form class="form-signin" action="/registro" method="POST">
+  <h1 class="h3 mb-3 fw-normal">REGISTRO</h1>
+    <fieldset>
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <p><label>NOMBRE: <input type="text" name="nombre" id="nombre" placeholder="Introduzca aquí su nombre"></label></p>
+    <p><label>APELLIDO 1:<input type="text" name="Apellido1" id="Apellido1" placeholder="Introduzca aquí su primer apellido"></label></p>
+    <p><label>APELLIDO 2:<input type="text" name="Apellido2" id="Apellido2" placeholder="Introduzca aquí su segundo apellido"></label></p>
+    <p><label>EMAIL:<input type="email" name="Correo" id="Correo" placeholder="nombre@gmail.com"></label></p>
+    <p><label>CONTRASEÑA:<input type="text" name="Contrasenya" id="Contrasenya" placeholder="Ocho caracteres entre letras y numeros"></label></p>
+    <p><label>REPETIR CONTRASEÑA<input type="password" name="repite" id="repite" placeholder="Introduzca de nuevo la constraseña"></label></p>
+    <label><input type="submit" value="enviar" name="enviar" id="enviar"></label>
+    <a href="{{ url_for('login') }}"><p>Volver</p></a>
+  </fieldset>
+  </form>
+{% endblock %}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="estilosFor.css">
+    <link rel="icon" type="image/jpg" href="calabera.jpg"/>
+    <script src="jquery-1.6.3.min.js"></script>
+    <script>
+        $ (function() {
+            $("body").hide().fadeIn(5000);
+        }) 
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>EL RIINCÓN DEL TERROR <img src="escudo.png" height="50vh" alt="Escudo de el rincon del terror"></h1>
+            <h2>Sitio no apto para los amantes de los cuentos de hadas</h2>
+        </hgroup>
+    </header>
+    <nav>
+        <div class="menu">
+            <h3>MENÚ PRIINCIIPAL</h3>
+        <ul class="navegar">
+            <li><a href="index.html">Inicio</a></li>
+            <li id="fo"><a>Contacto</a></li>
+            <li><a href="SerieB.html">Serie b</a></li>
+            <li><a>Terror máximo</a>
+                <ul>
+                    <li><a href="Español.html">Español</a></li>
+                    <li><a>Extranjero</a>
+                        <ul>
+                            <li><a href="SigloXX.html">Siglo XX</a></li>
+                            <li><a href="SigloXXI.html">Siglo XXI</a></li>
+                        </ul></li>
+                </ul>
+            </a></li>
+        </ul>
+    </div>
+    </nav>
+    <main>
+    <form method="post" onsubmit="return validarFormulario()">
+        <h3>Unete a nosotros</h3>
+        <div class="flexible">
+        <fieldset class="datos">
+        
+            <legend><img src="huesos.png" alt="calavera pequeña"> Datos personales</legend>
+        <div class="flexible">
+            <div>
+            <label>*Nombre:</label>
+            <label>*Apellidos:</label>
+            <label>*Telefono:</label>
+            <label>*DNI:</label>
+            <label> C.Postal:</label>
+            <label>*Email:</label>
+        </div>
+        <div>
+            <input type="text" id="nombre" name="nombre" placeholder="50 caracteres máximo">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Entre 7 y 70 caracteres">
+            <input type="tel" id="telefono" name="telefono" placeholder="formato: 000 000 000">
+            <input type="text" id="dni" name="dni" placeholder="8 números y una letra">
+            <input type="text" pattern="[0-9]{5}" title="El Código postal debe tener 5 cifras" placeholder="5 cifras">
+            <input type="email" id="cElectronico" name="cElectronico" placeholder="Introduzca un correo válido">
+        </div>
+    </div>
+        </fieldset>
+        <fieldset class="otra">
+            <legend><img src="huesos.png" alt="Calavera pequeña">Otra información</legend>
+            <div class="flexible">
+            <label for="edad">*Edad</label>
+            <input type="number" id="edad" min="18" max="99" step="2" required>
+        </div>  
+        <div class="flexible">
+        </div>
+        <div class="flexible">
+            <label for="sexo" id="sexo">Sexo</label>
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="sexo"id="hombre" value="hombre">
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="sexo"id="mujer" value= "mujer">
+        </div>
+        <div class="flexible">
+            <label>Seleccione un pais</label>
+            <select name="pais">   
+                <option valuw="0" selected>España</option>
+                <option value="1">Portugal</option>
+                <option value="2">Otro</option>
+            </select>
+        </div>
+        </fieldset>
+    </div>
+    </div>
+    <div class="flexible">
+        <fieldset class="sugerencias">
+            <legend><img src="huesos.png" alt="Calavera pequeña">Gustos y sugerencias</legend>
+            <h4>Selecciona tus subgéneros favoritos</h4>
+            <div class="flexible">
+            <label for="gore">Gore</label>
+            <input type="checkbox" value="gore">
+            <label for="gore">Horror</label>
+            <input type="checkbox" value="Horror">
+            <label for="gore">Thriller</label>
+            <input type="checkbox" value="Horror">
+            <label for="gore">Horror psicológico</label>
+            <input type="checkbox" value="Horror">
+        </div>
+            <h4>Sugerencias</h4>
+            <textarea placeholder="Escriba aquí sus sugerencias"></textarea>
+        </fieldset>
+        <fieldset class="aceptar">
+            <legend><img src="huesos.png" alt="Calavera pequeña">Contrato y condiciones</legend>
+        <div class="flexible">
+            <label for="aceptar">Acepto las condiciones para formar parte del club</label>
+            <input type="checkbox" name="acepto">
+        </div>
+        <div class="flexible">
+            <label for="deseo">Me gustaría una notificación con cada nueva entrada al blog</label>
+            <input type="checkbox" name="deseo">
+        </div>
+        </fieldset>
+    </div>
+    <button type="submit" value="enviar">Enviar</button>
+    <button type="reset" value="borrar">Borrar</button>
+    </form>
+</main>
+    <footer> 
+        <hr>
+        <h4>Fernando Herrero Rodríguez</h4>
+        <address>Todos los derechos reservados &copy; 2023</address>
+    </footer>
+</body>
+</html>

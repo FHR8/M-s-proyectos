@@ -1,0 +1,209 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'fuente';
+    src: url(Bloody\ terror\ TTF.ttf);
+}
+body{
+    background-image: url('Terror.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+}
+.principal{
+    width: 100%;
+    margin: 3% auto;
+    background:linear-gradient(#272727, #000000);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-areas: 'header header header header header header'
+    'nav nav nav nav nav nav'
+    'main main main main aside aside'
+    'main main main main aside aside'
+    'footer footer footer footer footer footer';
+    gap: 2%;
+    opacity: 0.7;
+    color: white;
+    text-align: justify;
+}
+header{
+    grid-area: header;
+    background:linear-gradient(#8c8c8c, #666666, #454546, #272727, #000000);
+    background-image: url('muerte.png');
+    background-size: contain;
+    background-color: black; 
+    border-radius: 8%;
+}
+hgroup, h3{
+    text-align: center;
+    color: red;
+    opacity: 0.9;
+    margin-top: 2%;
+    font-family: 'fuente';
+}
+nav{
+    grid-area: nav;
+    background:linear-gradient(#8c8c8c, #666666, #454546, #272727, #000000);
+}
+.menu{
+    width: 700px;
+    margin: 1% 1% 18% 1%
+}
+.menu h3{
+    margin:1% 1% 1.5% 1%;
+    padding: 1%;
+    text-decoration: underline;
+    text-align: center;
+    background-color: black;
+}
+ul, ol{
+    list-style-type: none;
+}
+.navegar li a{
+    color: red;
+    background-color: black ;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    border-radius: 100%;
+}
+.navegar li a:hover{
+    background-color: red;
+    color: black;
+}
+.navegar > li{
+    float: left;
+    margin-left: 5%;
+}
+.navegar li ul{
+    display: none;
+}
+.navegar li:hover > ul{
+    display: block;
+    position: absolute;
+    min-width: 160px;
+}
+.navegar li ul li{
+    position: relative;
+}
+.navegar li ul li ul{
+    top:0px;
+    left: 160px;
+}
+main{
+    grid-area: main;
+    background-color: black;
+    text-align: justify;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+main h2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'fuente';
+}
+section{
+    background:linear-gradient(#8c8c8c, #666666, #454546, #272727, #000000);
+    width: 97%;
+    margin: auto;
+}
+article{
+    background-color: black;
+    width: 45%;
+    min-height: 45vh;
+    margin: 0.5% auto;
+    border: 3px solid rgb(120, 22, 22);
+    padding: 0.5%;
+}
+article h4{
+    text-align: center;
+    color: red;
+    font-family: 'fuente';
+}
+.contacto{
+    background-image:url('calabaza.png');
+    background-size: cover;
+}
+.serieb{
+    background-image:url('serieb.png');
+    background-size: cover;
+}
+.terror{
+    background-image: url('posesioninfernal.jpg');
+    background-size: cover;
+}
+aside{
+    grid-area: aside;
+    background:black;
+}
+aside h4{
+    margin:30% auto;
+    background-color: #666666;
+    padding: 2% 0%;
+    font-size: 20px;
+    text-align: center;
+}
+aside p{
+    margin:16% 12%;
+}
+aside ol{
+    background:linear-gradient(#8c8c8c, #666666, #454546, #272727, #000000);
+    border-radius: 3%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+footer{
+    grid-area: footer;
+    padding: 2% 0% 1% 0%;
+    text-align: center;
+    background:linear-gradient(#8c8c8c, #666666, #454546, #272727, #000000);
+    margin: 2%;
+}
+.flexible{
+    display: flex;
+}
+p{
+    margin-bottom: 2%;
+}
+p a, ol li a{
+    margin-left: 2%;
+    background-color: black;
+    color: red;
+    border: 2px solid rgb(120, 22, 22);
+}
+p a:hover, ol li a:hover{
+background-color: red;
+color: black;
+}
+#in a{
+    border-radius: 0;
+}
+/*Tableta*/
+@media only screen and (max-width: 980px) {
+    aside{
+     display: none;
+    }
+    .menu{
+        width: 450px;
+        margin: 1% 1% 18% 1%;
+        font-size: 11px;
+    }
+    .navegar li:hover > ul{
+        display: block;
+        position: absolute;
+        min-width: 100px;
+    }
+    .navegar li ul li ul{
+        top:0px;
+        left: 100px;
+    }
+}
+																			
+/* Móvil */										
+@media only screen and (max-width: 480px) {	
+}							

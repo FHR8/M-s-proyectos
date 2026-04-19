@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="text-center max-w-3xl">
+    <h1 class="text-5xl font-extrabold text-blue-900 mb-6 tracking-tight">Bienvenido al Analizador NLP</h1>
+    
+    <p class="text-xl text-gray-600 mb-10 leading-relaxed">
+        Una herramienta profesional impulsada por Inteligencia Artificial para extraer métricas, analizar contextos 
+        y generar informes interactivos en Excel a partir de documentos legales o políticos.
+    </p>
+    
+    <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 mb-10">
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">¿Qué puedes hacer?</h3>
+        <ul class="text-left text-gray-600 space-y-3 mb-8 max-w-md mx-auto">
+            <li class="flex items-center"><span class="text-green-500 mr-2">✔️</span> Extracción de Nubes de Palabras.</li>
+            <li class="flex items-center"><span class="text-green-500 mr-2">✔️</span> Análisis de ponderación y frecuencia.</li>
+            <li class="flex items-center"><span class="text-green-500 mr-2">✔️</span> Buscador interactivo de contextos en vivo.</li>
+            <li class="flex items-center"><span class="text-green-500 mr-2">✔️</span> Descarga de reportes automáticos en Excel.</li>
+        </ul>
+    </div>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/login" class="bg-blue-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-blue-700 transition shadow-lg text-lg">
+            Iniciar Sesión
+        </a>
+        <a href="/registro" class="bg-white text-blue-600 border-2 border-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-blue-50 transition shadow-lg text-lg">
+            Crear una Cuenta Gratis
+        </a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,371 @@
+2026-04-19 07:37:05,423 - INFO - Cargando modelo de lenguaje Spacy (es_core_news_sm)...
+2026-04-19 07:37:05,888 - INFO - Modelo NLP cargado con éxito.
+2026-04-19 07:37:05,891 - INFO - Arrancando el servidor web Flask en puerto 5000...
+2026-04-19 07:37:05,912 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 07:37:05,912 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 07:37:05,914 - INFO -  * Restarting with stat
+2026-04-19 07:37:08,399 - INFO - Cargando modelo de lenguaje Spacy (es_core_news_sm)...
+2026-04-19 07:37:08,832 - INFO - Modelo NLP cargado con éxito.
+2026-04-19 07:37:08,833 - INFO - Arrancando el servidor web Flask en puerto 5000...
+2026-04-19 07:37:08,843 - WARNING -  * Debugger is active!
+2026-04-19 07:37:08,848 - INFO -  * Debugger PIN: 678-607-330
+2026-04-19 07:37:39,042 - INFO - 127.0.0.1 - - [19/Apr/2026 07:37:39] "GET / HTTP/1.1" 200 -
+2026-04-19 07:37:39,274 - INFO - 127.0.0.1 - - [19/Apr/2026 07:37:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 07:37:53,870 - INFO - Petición POST recibida en /procesar
+2026-04-19 07:37:53,875 - INFO - --- INICIANDO PROCESAMIENTO GLOBAL ---
+2026-04-19 07:37:53,875 - INFO - Leyendo documento: uploads\Corpus a favor.docx
+2026-04-19 07:37:54,011 - INFO - Leyendo documento: uploads\Corpus en contra.docx
+2026-04-19 07:37:54,089 - INFO - Texto guardado en caché: uploads/favor.txt
+2026-04-19 07:37:54,091 - INFO - Texto guardado en caché: uploads/contra.txt
+2026-04-19 07:38:02,839 - INFO - Nube de palabras generada: static\nube_favor.png
+2026-04-19 07:38:03,977 - INFO - Nube de palabras generada: static\nube_contra.png
+2026-04-19 07:38:05,085 - INFO - Excel guardado correctamente: EB_CyL_2026.xlsx
+2026-04-19 07:38:08,417 - INFO - Formato aplicado a: EB_CyL_2026.xlsx
+2026-04-19 07:38:08,417 - INFO - --- PROCESAMIENTO FINALIZADO CON ÉXITO ---
+2026-04-19 07:38:08,425 - INFO - 127.0.0.1 - - [19/Apr/2026 07:38:08] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 07:38:08,533 - INFO - 127.0.0.1 - - [19/Apr/2026 07:38:08] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 07:38:08,533 - INFO - 127.0.0.1 - - [19/Apr/2026 07:38:08] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 07:38:08,615 - INFO - 127.0.0.1 - - [19/Apr/2026 07:38:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 07:38:28,973 - INFO - 127.0.0.1 - - [19/Apr/2026 07:38:28] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 07:38:52,083 - INFO - 127.0.0.1 - - [19/Apr/2026 07:38:52] "GET / HTTP/1.1" 200 -
+2026-04-19 07:38:52,534 - INFO - 127.0.0.1 - - [19/Apr/2026 07:38:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 07:38:59,667 - INFO - Usuario solicitó descarga de: EB_CyL_2026.xlsx
+2026-04-19 07:38:59,667 - INFO - 127.0.0.1 - - [19/Apr/2026 07:38:59] "GET /descargar/EB_CyL_2026.xlsx HTTP/1.1" 200 -
+2026-04-19 07:42:05,155 - INFO - 127.0.0.1 - - [19/Apr/2026 07:42:05] "GET / HTTP/1.1" 200 -
+2026-04-19 07:42:05,358 - INFO - 127.0.0.1 - - [19/Apr/2026 07:42:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 07:43:04,746 - INFO - Petición POST recibida en /procesar
+2026-04-19 07:43:04,751 - INFO - --- INICIANDO PROCESAMIENTO GLOBAL ---
+2026-04-19 07:43:04,751 - INFO - Leyendo documento: uploads\Corpus a favor.docx
+2026-04-19 07:43:04,880 - INFO - Leyendo documento: uploads\Corpus en contra.docx
+2026-04-19 07:43:04,972 - INFO - Texto guardado en caché: uploads/favor.txt
+2026-04-19 07:43:04,977 - INFO - Texto guardado en caché: uploads/contra.txt
+2026-04-19 07:43:12,712 - INFO - Nube de palabras generada: static\nube_favor.png
+2026-04-19 07:43:13,836 - INFO - Nube de palabras generada: static\nube_contra.png
+2026-04-19 07:43:14,892 - INFO - Excel guardado correctamente: EB_CyL_2026.xlsx
+2026-04-19 07:43:18,185 - INFO - Formato aplicado a: EB_CyL_2026.xlsx
+2026-04-19 07:43:18,185 - INFO - --- PROCESAMIENTO FINALIZADO CON ÉXITO ---
+2026-04-19 07:43:18,189 - INFO - 127.0.0.1 - - [19/Apr/2026 07:43:18] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 07:43:18,276 - INFO - 127.0.0.1 - - [19/Apr/2026 07:43:18] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 07:43:18,281 - INFO - 127.0.0.1 - - [19/Apr/2026 07:43:18] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 07:43:18,361 - INFO - 127.0.0.1 - - [19/Apr/2026 07:43:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 07:43:29,269 - INFO - 127.0.0.1 - - [19/Apr/2026 07:43:29] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 07:43:38,187 - INFO - Usuario solicitó descarga de: EB_CyL_2026.xlsx
+2026-04-19 07:43:38,190 - INFO - 127.0.0.1 - - [19/Apr/2026 07:43:38] "GET /descargar/EB_CyL_2026.xlsx HTTP/1.1" 200 -
+2026-04-19 07:52:15,864 - INFO -  * Detected change in 'C:\\Users\\fervi\\Desktop\\FINAL_ABRIL\\POO\\app.py', reloading
+2026-04-19 07:52:16,340 - INFO -  * Restarting with stat
+2026-04-19 07:52:29,079 - INFO - Cargando modelo de lenguaje Spacy (es_core_news_sm)...
+2026-04-19 07:52:29,506 - INFO - Modelo NLP cargado con éxito.
+2026-04-19 07:52:29,508 - INFO - =====================================================
+2026-04-19 07:52:29,508 - INFO - Arrancando el servidor web Flask en puerto 5000...
+2026-04-19 07:52:29,508 - INFO - =====================================================
+2026-04-19 07:52:29,523 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 07:52:29,523 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 07:52:29,523 - INFO -  * Restarting with stat
+2026-04-19 07:52:32,183 - INFO - Cargando modelo de lenguaje Spacy (es_core_news_sm)...
+2026-04-19 07:52:32,710 - INFO - Modelo NLP cargado con éxito.
+2026-04-19 07:52:32,714 - INFO - =====================================================
+2026-04-19 07:52:32,714 - INFO - Arrancando el servidor web Flask en puerto 5000...
+2026-04-19 07:52:32,714 - INFO - =====================================================
+2026-04-19 07:52:32,722 - WARNING -  * Debugger is active!
+2026-04-19 07:52:32,730 - INFO -  * Debugger PIN: 678-607-330
+2026-04-19 07:52:38,976 - INFO - 127.0.0.1 - - [19/Apr/2026 07:52:38] "GET / HTTP/1.1" 200 -
+2026-04-19 07:52:39,238 - INFO - 127.0.0.1 - - [19/Apr/2026 07:52:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 07:52:54,471 - INFO - Petición POST recibida en /procesar
+2026-04-19 07:52:54,476 - INFO - Archivos guardados: Corpus a favor.docx y Corpus en contra.docx. Iniciando análisis...
+2026-04-19 07:52:54,476 - INFO - --- INICIANDO PROCESAMIENTO GLOBAL ---
+2026-04-19 07:52:54,476 - INFO - Leyendo documento: uploads\Corpus a favor.docx
+2026-04-19 07:52:54,601 - INFO - Leyendo documento: uploads\Corpus en contra.docx
+2026-04-19 07:52:54,708 - INFO - Texto guardado en caché: uploads/favor.txt
+2026-04-19 07:52:54,713 - INFO - Texto guardado en caché: uploads/contra.txt
+2026-04-19 07:53:03,470 - INFO - Nube de palabras generada: static\nube_favor.png
+2026-04-19 07:53:04,550 - INFO - Nube de palabras generada: static\nube_contra.png
+2026-04-19 07:53:05,682 - INFO - Excel guardado correctamente: EB_CyL_2026.xlsx
+2026-04-19 07:53:09,077 - INFO - Formato aplicado a: EB_CyL_2026.xlsx
+2026-04-19 07:53:09,077 - INFO - --- PROCESAMIENTO FINALIZADO CON ÉXITO ---
+2026-04-19 07:53:09,082 - INFO - 127.0.0.1 - - [19/Apr/2026 07:53:09] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 07:53:09,175 - INFO - 127.0.0.1 - - [19/Apr/2026 07:53:09] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 07:53:09,177 - INFO - 127.0.0.1 - - [19/Apr/2026 07:53:09] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 07:53:21,301 - INFO - Usuario buscando contexto para la palabra: 'aprobar'
+2026-04-19 07:53:21,311 - INFO - 127.0.0.1 - - [19/Apr/2026 07:53:21] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 07:53:34,548 - INFO - Usuario solicitó descarga de: EB_CyL_2026.xlsx
+2026-04-19 07:53:34,550 - INFO - 127.0.0.1 - - [19/Apr/2026 07:53:34] "GET /descargar/EB_CyL_2026.xlsx HTTP/1.1" 200 -
+2026-04-19 07:54:45,268 - INFO - Cargando modelo de lenguaje Spacy (es_core_news_sm)...
+2026-04-19 07:54:45,680 - INFO - Modelo NLP cargado con éxito.
+2026-04-19 07:54:45,680 - INFO - =====================================================
+2026-04-19 07:54:45,680 - INFO - Arrancando el servidor web Flask en puerto 5000...
+2026-04-19 07:54:45,680 - INFO - =====================================================
+2026-04-19 07:54:45,697 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 07:54:45,697 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 07:54:45,698 - INFO -  * Restarting with stat
+2026-04-19 07:54:48,580 - INFO - Cargando modelo de lenguaje Spacy (es_core_news_sm)...
+2026-04-19 07:54:49,136 - INFO - Modelo NLP cargado con éxito.
+2026-04-19 07:54:49,140 - INFO - =====================================================
+2026-04-19 07:54:49,140 - INFO - Arrancando el servidor web Flask en puerto 5000...
+2026-04-19 07:54:49,140 - INFO - =====================================================
+2026-04-19 07:54:49,153 - WARNING -  * Debugger is active!
+2026-04-19 07:54:49,160 - INFO -  * Debugger PIN: 678-607-330
+2026-04-19 07:55:37,152 - INFO - 127.0.0.1 - - [19/Apr/2026 07:55:37] "GET / HTTP/1.1" 200 -
+2026-04-19 07:55:37,481 - INFO - 127.0.0.1 - - [19/Apr/2026 07:55:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 07:56:02,802 - INFO - Petición POST recibida en /procesar
+2026-04-19 07:56:02,808 - INFO - Archivos guardados: Corpus a favor.docx y Corpus en contra.docx. Iniciando análisis...
+2026-04-19 07:56:02,808 - INFO - --- INICIANDO PROCESAMIENTO GLOBAL ---
+2026-04-19 07:56:02,808 - INFO - Leyendo documento: uploads\Corpus a favor.docx
+2026-04-19 07:56:02,943 - INFO - Leyendo documento: uploads\Corpus en contra.docx
+2026-04-19 07:56:03,027 - INFO - Texto guardado en caché: uploads/favor.txt
+2026-04-19 07:56:03,030 - INFO - Texto guardado en caché: uploads/contra.txt
+2026-04-19 07:56:11,829 - INFO - Nube de palabras generada: static\nube_favor.png
+2026-04-19 07:56:13,074 - INFO - Nube de palabras generada: static\nube_contra.png
+2026-04-19 07:56:14,284 - INFO - Excel guardado correctamente: EB_CyL_2026.xlsx
+2026-04-19 07:56:17,936 - INFO - Formato aplicado a: EB_CyL_2026.xlsx
+2026-04-19 07:56:17,937 - INFO - --- PROCESAMIENTO FINALIZADO CON ÉXITO ---
+2026-04-19 07:56:17,960 - INFO - 127.0.0.1 - - [19/Apr/2026 07:56:17] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 07:56:18,010 - INFO - 127.0.0.1 - - [19/Apr/2026 07:56:18] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 07:56:18,010 - INFO - 127.0.0.1 - - [19/Apr/2026 07:56:18] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 07:56:38,826 - INFO - Usuario buscando contexto para la palabra: 'Persona'
+2026-04-19 07:56:38,835 - INFO - 127.0.0.1 - - [19/Apr/2026 07:56:38] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 07:56:43,278 - INFO - Usuario solicitó descarga de: EB_CyL_2026.xlsx
+2026-04-19 07:56:43,278 - INFO - 127.0.0.1 - - [19/Apr/2026 07:56:43] "GET /descargar/EB_CyL_2026.xlsx HTTP/1.1" 200 -
+2026-04-19 08:04:15,887 - INFO -  * Detected change in 'C:\\Users\\fervi\\Desktop\\FINAL_ABRIL\\POO\\app.py', reloading
+2026-04-19 08:04:16,333 - INFO -  * Restarting with stat
+2026-04-19 08:04:19,220 - INFO - Cargando modelo de lenguaje Spacy (es_core_news_sm)...
+2026-04-19 08:04:19,741 - INFO - Modelo NLP cargado con éxito.
+2026-04-19 08:04:19,754 - WARNING -  * Debugger is active!
+2026-04-19 08:04:19,760 - INFO -  * Debugger PIN: 678-607-330
+2026-04-19 08:04:56,028 - INFO -  * Detected change in 'C:\\Users\\fervi\\Desktop\\FINAL_ABRIL\\POO\\motor_nlp.py', reloading
+2026-04-19 08:04:56,337 - INFO -  * Restarting with stat
+2026-04-19 08:04:59,412 - WARNING -  * Debugger is active!
+2026-04-19 08:04:59,416 - INFO -  * Debugger PIN: 678-607-330
+2026-04-19 08:05:17,721 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 08:05:17,721 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 08:05:17,722 - INFO -  * Restarting with stat
+2026-04-19 08:05:20,695 - WARNING -  * Debugger is active!
+2026-04-19 08:05:20,700 - INFO -  * Debugger PIN: 678-607-330
+2026-04-19 08:05:27,742 - INFO - 127.0.0.1 - - [19/Apr/2026 08:05:27] "GET / HTTP/1.1" 200 -
+2026-04-19 08:05:27,974 - INFO - 127.0.0.1 - - [19/Apr/2026 08:05:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 08:06:12,278 - INFO - 127.0.0.1 - - [19/Apr/2026 08:06:12] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 08:06:12,362 - INFO - 127.0.0.1 - - [19/Apr/2026 08:06:12] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 08:06:12,362 - INFO - 127.0.0.1 - - [19/Apr/2026 08:06:12] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 08:06:27,528 - INFO - 127.0.0.1 - - [19/Apr/2026 08:06:27] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 08:06:29,259 - INFO - 127.0.0.1 - - [19/Apr/2026 08:06:29] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 08:06:32,218 - INFO - 127.0.0.1 - - [19/Apr/2026 08:06:32] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 08:06:32,638 - INFO - 127.0.0.1 - - [19/Apr/2026 08:06:32] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 08:15:50,653 - INFO -  * Detected change in 'C:\\Users\\fervi\\Desktop\\FINAL_ABRIL\\POO\\motor_nlp.py', reloading
+2026-04-19 08:15:51,065 - INFO -  * Restarting with stat
+2026-04-19 08:15:53,867 - INFO - Cargando modelo Spacy...
+2026-04-19 08:15:54,378 - WARNING -  * Debugger is active!
+2026-04-19 08:15:54,382 - INFO -  * Debugger PIN: 678-607-330
+2026-04-19 08:16:43,756 - INFO -  * Detected change in 'C:\\Users\\fervi\\Desktop\\FINAL_ABRIL\\POO\\app.py', reloading
+2026-04-19 08:16:44,094 - INFO -  * Restarting with stat
+2026-04-19 08:16:46,716 - INFO - Cargando modelo Spacy...
+2026-04-19 08:16:56,343 - INFO - Cargando modelo Spacy...
+2026-04-19 08:16:56,782 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 08:16:56,782 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 08:17:20,939 - INFO - 127.0.0.1 - - [19/Apr/2026 08:17:20] "GET / HTTP/1.1" 200 -
+2026-04-19 08:17:21,128 - INFO - 127.0.0.1 - - [19/Apr/2026 08:17:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 08:17:37,851 - INFO - Leyendo documento: uploads\Corpus a favor.docx
+2026-04-19 08:17:37,972 - INFO - Leyendo documento: uploads\Corpus en contra.docx
+2026-04-19 08:17:38,054 - INFO - Texto guardado en caché: uploads/favor.txt
+2026-04-19 08:17:38,058 - INFO - Texto guardado en caché: uploads/contra.txt
+2026-04-19 08:17:49,435 - INFO - 127.0.0.1 - - [19/Apr/2026 08:17:49] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 08:17:49,531 - INFO - 127.0.0.1 - - [19/Apr/2026 08:17:49] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 08:17:49,531 - INFO - 127.0.0.1 - - [19/Apr/2026 08:17:49] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 08:17:49,613 - INFO - 127.0.0.1 - - [19/Apr/2026 08:17:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 08:17:56,829 - INFO - 127.0.0.1 - - [19/Apr/2026 08:17:56] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 08:18:06,785 - INFO - 127.0.0.1 - - [19/Apr/2026 08:18:06] "GET /descargar/Putas.xlsx HTTP/1.1" 200 -
+2026-04-19 08:32:51,455 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 08:32:51,455 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 08:33:10,199 - INFO - 127.0.0.1 - - [19/Apr/2026 08:33:10] "GET / HTTP/1.1" 200 -
+2026-04-19 08:33:10,505 - INFO - 127.0.0.1 - - [19/Apr/2026 08:33:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 08:33:46,709 - ERROR - Error: Could not build url for endpoint 'descargar' with values ['nombre_archivo']. Did you forget to specify values ['nombre']?
+2026-04-19 08:33:46,709 - INFO - 127.0.0.1 - - [19/Apr/2026 08:33:46] "[35m[1mPOST /procesar HTTP/1.1[0m" 500 -
+2026-04-19 08:34:49,398 - INFO - 127.0.0.1 - - [19/Apr/2026 08:34:49] "GET / HTTP/1.1" 200 -
+2026-04-19 08:35:08,977 - ERROR - Error: Could not build url for endpoint 'descargar' with values ['nombre_archivo']. Did you forget to specify values ['nombre']?
+2026-04-19 08:35:08,978 - INFO - 127.0.0.1 - - [19/Apr/2026 08:35:08] "[35m[1mPOST /procesar HTTP/1.1[0m" 500 -
+2026-04-19 08:35:08,993 - INFO - 127.0.0.1 - - [19/Apr/2026 08:35:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 08:40:11,842 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 08:40:11,842 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 08:40:20,184 - INFO - 127.0.0.1 - - [19/Apr/2026 08:40:20] "GET / HTTP/1.1" 200 -
+2026-04-19 08:40:51,686 - INFO - 127.0.0.1 - - [19/Apr/2026 08:40:51] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 08:40:51,717 - INFO - 127.0.0.1 - - [19/Apr/2026 08:40:51] "[33mGET /static/static\\nube_favor.png HTTP/1.1[0m" 404 -
+2026-04-19 08:40:51,722 - INFO - 127.0.0.1 - - [19/Apr/2026 08:40:51] "[33mGET /static/static\\nube_contra.png HTTP/1.1[0m" 404 -
+2026-04-19 08:40:51,788 - INFO - 127.0.0.1 - - [19/Apr/2026 08:40:51] "[33mGET /static/static\\nube_contra.png HTTP/1.1[0m" 404 -
+2026-04-19 08:40:51,790 - INFO - 127.0.0.1 - - [19/Apr/2026 08:40:51] "[33mGET /static/static\\nube_favor.png HTTP/1.1[0m" 404 -
+2026-04-19 08:41:25,127 - INFO - 127.0.0.1 - - [19/Apr/2026 08:41:25] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 08:41:32,908 - INFO - 127.0.0.1 - - [19/Apr/2026 08:41:32] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 08:49:26,446 - API - Cargando modelo NLP de Spacy en español...
+2026-04-19 08:49:26,918 - API - Arrancando el servidor web Flask en puerto 5000...
+2026-04-19 08:49:26,930 - API - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 08:49:26,930 - API - [33mPress CTRL+C to quit[0m
+2026-04-19 08:49:41,657 - API - 127.0.0.1 - - [19/Apr/2026 08:49:41] "GET / HTTP/1.1" 200 -
+2026-04-19 08:49:41,937 - API - 127.0.0.1 - - [19/Apr/2026 08:49:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 08:49:55,266 - API - Procesando archivos: Corpus a favor.docx y Corpus en contra.docx
+2026-04-19 08:49:55,266 - API - --- INICIANDO FASE DE PROCESAMIENTO GLOBAL ---
+2026-04-19 08:50:13,059 - API - --- PROCESAMIENTO FINALIZADO CON ÉXITO ---
+2026-04-19 08:50:13,067 - API - 127.0.0.1 - - [19/Apr/2026 08:50:13] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 08:50:13,090 - API - 127.0.0.1 - - [19/Apr/2026 08:50:13] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 08:50:13,090 - API - 127.0.0.1 - - [19/Apr/2026 08:50:13] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 08:50:27,216 - API - 127.0.0.1 - - [19/Apr/2026 08:50:27] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 08:50:35,474 - API - 127.0.0.1 - - [19/Apr/2026 08:50:35] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 08:50:41,040 - API - Usuario descargando: Corpus_a_favor.xlsx
+2026-04-19 08:50:41,042 - API - 127.0.0.1 - - [19/Apr/2026 08:50:41] "GET /descargar/Corpus_a_favor.xlsx HTTP/1.1" 200 -
+2026-04-19 08:50:42,722 - API - Usuario descargando: Corpus_en_contra.xlsx
+2026-04-19 08:50:42,722 - API - 127.0.0.1 - - [19/Apr/2026 08:50:42] "GET /descargar/Corpus_en_contra.xlsx HTTP/1.1" 200 -
+2026-04-19 08:50:45,343 - API - Usuario descargando: petardas.xlsx
+2026-04-19 08:50:45,345 - API - 127.0.0.1 - - [19/Apr/2026 08:50:45] "GET /descargar/petardas.xlsx HTTP/1.1" 200 -
+2026-04-19 16:11:08,462 - API - Cargando modelo NLP de Spacy en español...
+2026-04-19 16:11:08,920 - API - Arrancando el servidor web Flask en puerto 5000...
+2026-04-19 16:11:08,938 - API - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 16:11:08,938 - API - [33mPress CTRL+C to quit[0m
+2026-04-19 16:11:17,397 - API - 127.0.0.1 - - [19/Apr/2026 16:11:17] "GET / HTTP/1.1" 200 -
+2026-04-19 16:11:17,820 - API - 127.0.0.1 - - [19/Apr/2026 16:11:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 16:12:10,626 - API - Procesando archivos: Corpus a favor.docx y Corpus en contra.docx
+2026-04-19 16:12:10,626 - API - --- INICIANDO FASE DE PROCESAMIENTO GLOBAL ---
+2026-04-19 16:12:28,594 - API - --- PROCESAMIENTO FINALIZADO CON ÉXITO ---
+2026-04-19 16:12:28,618 - API - 127.0.0.1 - - [19/Apr/2026 16:12:28] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 16:12:28,642 - API - 127.0.0.1 - - [19/Apr/2026 16:12:28] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 16:12:28,642 - API - 127.0.0.1 - - [19/Apr/2026 16:12:28] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 16:12:28,783 - API - 127.0.0.1 - - [19/Apr/2026 16:12:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 16:12:43,718 - API - 127.0.0.1 - - [19/Apr/2026 16:12:43] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 16:13:01,458 - API - 127.0.0.1 - - [19/Apr/2026 16:13:01] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 16:13:11,975 - API - 127.0.0.1 - - [19/Apr/2026 16:13:11] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 16:13:20,923 - API - 127.0.0.1 - - [19/Apr/2026 16:13:20] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 16:13:58,781 - API - 127.0.0.1 - - [19/Apr/2026 16:13:58] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 16:14:08,905 - API - 127.0.0.1 - - [19/Apr/2026 16:14:08] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 16:17:25,371 - API - 127.0.0.1 - - [19/Apr/2026 16:17:25] "GET / HTTP/1.1" 200 -
+2026-04-19 16:17:25,592 - API - 127.0.0.1 - - [19/Apr/2026 16:17:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 16:19:11,374 - API - Procesando archivos: Corpus a favor.docx y Corpus en contra.docx
+2026-04-19 16:19:11,374 - API - --- INICIANDO FASE DE PROCESAMIENTO GLOBAL ---
+2026-04-19 16:19:26,186 - API - --- PROCESAMIENTO FINALIZADO CON ÉXITO ---
+2026-04-19 16:19:26,198 - API - 127.0.0.1 - - [19/Apr/2026 16:19:26] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 16:19:26,321 - API - 127.0.0.1 - - [19/Apr/2026 16:19:26] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 16:19:26,321 - API - 127.0.0.1 - - [19/Apr/2026 16:19:26] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 16:19:26,436 - API - 127.0.0.1 - - [19/Apr/2026 16:19:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 16:19:51,408 - API - Usuario descargando: Corpus_a_favor.xlsx
+2026-04-19 16:19:51,413 - API - 127.0.0.1 - - [19/Apr/2026 16:19:51] "GET /descargar/Corpus_a_favor.xlsx HTTP/1.1" 200 -
+2026-04-19 16:19:53,313 - API - Usuario descargando: Corpus_en_contra.xlsx
+2026-04-19 16:19:53,313 - API - 127.0.0.1 - - [19/Apr/2026 16:19:53] "GET /descargar/Corpus_en_contra.xlsx HTTP/1.1" 200 -
+2026-04-19 16:19:55,902 - API - Usuario descargando: Corpus_en_contra.xlsx
+2026-04-19 16:19:55,903 - API - 127.0.0.1 - - [19/Apr/2026 16:19:55] "GET /descargar/Corpus_en_contra.xlsx HTTP/1.1" 200 -
+2026-04-19 16:19:58,000 - API - Usuario descargando: putas_reputas.xlsx
+2026-04-19 16:19:58,000 - API - 127.0.0.1 - - [19/Apr/2026 16:19:58] "GET /descargar/putas_reputas.xlsx HTTP/1.1" 200 -
+2026-04-19 16:20:01,025 - API - Usuario descargando: putas_reputas.xlsx
+2026-04-19 16:20:01,027 - API - 127.0.0.1 - - [19/Apr/2026 16:20:01] "GET /descargar/putas_reputas.xlsx HTTP/1.1" 200 -
+2026-04-19 16:33:27,074 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 16:33:27,074 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 16:33:34,935 - INFO - 127.0.0.1 - - [19/Apr/2026 16:33:34] "GET / HTTP/1.1" 200 -
+2026-04-19 16:33:35,243 - INFO - 127.0.0.1 - - [19/Apr/2026 16:33:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 16:34:09,473 - INFO - 127.0.0.1 - - [19/Apr/2026 16:34:09] "GET /login HTTP/1.1" 200 -
+2026-04-19 16:34:17,750 - INFO - 127.0.0.1 - - [19/Apr/2026 16:34:17] "POST /login HTTP/1.1" 200 -
+2026-04-19 16:34:24,643 - INFO - 127.0.0.1 - - [19/Apr/2026 16:34:24] "GET /registro HTTP/1.1" 200 -
+2026-04-19 16:34:48,390 - INFO - 127.0.0.1 - - [19/Apr/2026 16:34:48] "[32mPOST /registro HTTP/1.1[0m" 302 -
+2026-04-19 16:34:48,396 - INFO - 127.0.0.1 - - [19/Apr/2026 16:34:48] "GET /login HTTP/1.1" 200 -
+2026-04-19 16:35:09,930 - INFO - 127.0.0.1 - - [19/Apr/2026 16:35:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-04-19 16:35:09,939 - INFO - 127.0.0.1 - - [19/Apr/2026 16:35:09] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 16:36:06,320 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:06] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 16:36:06,351 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:06] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 16:36:06,353 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:06] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 16:36:24,093 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:24] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 16:36:33,538 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:33] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 16:36:42,375 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:42] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 16:36:43,286 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:43] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 16:36:45,388 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:45] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 16:36:51,504 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:51] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-04-19 16:36:51,508 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:51] "GET / HTTP/1.1" 200 -
+2026-04-19 16:36:56,435 - INFO - 127.0.0.1 - - [19/Apr/2026 16:36:56] "GET /login HTTP/1.1" 200 -
+2026-04-19 16:37:04,497 - INFO - 127.0.0.1 - - [19/Apr/2026 16:37:04] "POST /login HTTP/1.1" 200 -
+2026-04-19 16:37:17,455 - INFO - 127.0.0.1 - - [19/Apr/2026 16:37:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-04-19 16:37:17,465 - INFO - 127.0.0.1 - - [19/Apr/2026 16:37:17] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 16:37:52,578 - INFO - 127.0.0.1 - - [19/Apr/2026 16:37:52] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 16:37:52,609 - INFO - 127.0.0.1 - - [19/Apr/2026 16:37:52] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 16:37:52,612 - INFO - 127.0.0.1 - - [19/Apr/2026 16:37:52] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 16:38:01,262 - INFO - 127.0.0.1 - - [19/Apr/2026 16:38:01] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 16:38:20,342 - INFO - 127.0.0.1 - - [19/Apr/2026 16:38:20] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 16:38:36,382 - INFO - 127.0.0.1 - - [19/Apr/2026 16:38:36] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 16:38:38,090 - INFO - 127.0.0.1 - - [19/Apr/2026 16:38:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-04-19 16:38:38,106 - INFO - 127.0.0.1 - - [19/Apr/2026 16:38:38] "GET / HTTP/1.1" 200 -
+2026-04-19 16:38:44,430 - INFO - 127.0.0.1 - - [19/Apr/2026 16:38:44] "GET / HTTP/1.1" 200 -
+2026-04-19 17:13:56,760 - INFO - 127.0.0.1 - - [19/Apr/2026 17:13:56] "GET / HTTP/1.1" 200 -
+2026-04-19 17:13:57,044 - INFO - 127.0.0.1 - - [19/Apr/2026 17:13:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:13:59,076 - INFO - 127.0.0.1 - - [19/Apr/2026 17:13:59] "GET /login HTTP/1.1" 200 -
+2026-04-19 17:13:59,265 - INFO - 127.0.0.1 - - [19/Apr/2026 17:13:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:14:16,403 - INFO - 127.0.0.1 - - [19/Apr/2026 17:14:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-04-19 17:14:16,409 - INFO - 127.0.0.1 - - [19/Apr/2026 17:14:16] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 17:14:16,647 - INFO - 127.0.0.1 - - [19/Apr/2026 17:14:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:15:03,521 - INFO - 127.0.0.1 - - [19/Apr/2026 17:15:03] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 17:15:03,546 - INFO - 127.0.0.1 - - [19/Apr/2026 17:15:03] "GET /static/nube_favor.png HTTP/1.1" 200 -
+2026-04-19 17:15:03,548 - INFO - 127.0.0.1 - - [19/Apr/2026 17:15:03] "GET /static/nube_contra.png HTTP/1.1" 200 -
+2026-04-19 17:15:03,741 - INFO - 127.0.0.1 - - [19/Apr/2026 17:15:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:15:16,476 - INFO - 127.0.0.1 - - [19/Apr/2026 17:15:16] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 17:15:27,697 - INFO - 127.0.0.1 - - [19/Apr/2026 17:15:27] "GET /descargar/Corpus_a_favor.xlsx HTTP/1.1" 200 -
+2026-04-19 17:15:29,523 - INFO - 127.0.0.1 - - [19/Apr/2026 17:15:29] "GET /descargar/Corpus_en_contra.xlsx HTTP/1.1" 200 -
+2026-04-19 17:15:31,533 - INFO - 127.0.0.1 - - [19/Apr/2026 17:15:31] "GET /descargar/Cosas.xlsx HTTP/1.1" 200 -
+2026-04-19 17:15:49,072 - INFO - 127.0.0.1 - - [19/Apr/2026 17:15:49] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 17:15:49,302 - INFO - 127.0.0.1 - - [19/Apr/2026 17:15:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:17:55,953 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 17:17:55,953 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 17:18:46,842 - INFO - 127.0.0.1 - - [19/Apr/2026 17:18:46] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-19 17:18:46,873 - INFO - 127.0.0.1 - - [19/Apr/2026 17:18:46] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 17:18:47,233 - INFO - 127.0.0.1 - - [19/Apr/2026 17:18:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:19:01,431 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:01] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-19 17:19:01,439 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:01] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 17:19:01,770 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:19:06,271 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:06] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-19 17:19:06,280 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:06] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 17:19:06,561 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:19:16,754 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-04-19 17:19:16,766 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:16] "GET / HTTP/1.1" 200 -
+2026-04-19 17:19:16,949 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:19:27,916 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:27] "GET / HTTP/1.1" 200 -
+2026-04-19 17:19:28,192 - INFO - 127.0.0.1 - - [19/Apr/2026 17:19:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:20:37,522 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 17:20:37,522 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 17:21:23,877 - INFO - 127.0.0.1 - - [19/Apr/2026 17:21:23] "GET /login HTTP/1.1" 200 -
+2026-04-19 17:21:24,115 - INFO - 127.0.0.1 - - [19/Apr/2026 17:21:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:21:37,627 - INFO - 127.0.0.1 - - [19/Apr/2026 17:21:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-04-19 17:21:37,644 - INFO - 127.0.0.1 - - [19/Apr/2026 17:21:37] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 17:22:41,072 - INFO - 127.0.0.1 - - [19/Apr/2026 17:22:41] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 17:22:41,132 - INFO - 127.0.0.1 - - [19/Apr/2026 17:22:41] "GET /static/nube_fav_1776612119.png HTTP/1.1" 200 -
+2026-04-19 17:22:41,142 - INFO - 127.0.0.1 - - [19/Apr/2026 17:22:41] "GET /static/nube_con_1776612119.png HTTP/1.1" 200 -
+2026-04-19 17:24:19,570 - INFO - 127.0.0.1 - - [19/Apr/2026 17:24:19] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 17:39:41,916 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 17:39:41,916 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 17:42:15,093 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 17:42:15,093 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 17:42:18,425 - INFO - 127.0.0.1 - - [19/Apr/2026 17:42:18] "[32mGET / HTTP/1.1[0m" 302 -
+2026-04-19 17:42:18,444 - INFO - 127.0.0.1 - - [19/Apr/2026 17:42:18] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 17:42:18,774 - INFO - 127.0.0.1 - - [19/Apr/2026 17:42:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:43:26,153 - INFO - 127.0.0.1 - - [19/Apr/2026 17:43:26] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 17:43:26,233 - INFO - 127.0.0.1 - - [19/Apr/2026 17:43:26] "GET /static/nube_fav_1776613363.png HTTP/1.1" 200 -
+2026-04-19 17:43:26,243 - INFO - 127.0.0.1 - - [19/Apr/2026 17:43:26] "GET /static/nube_con_1776613363.png HTTP/1.1" 200 -
+2026-04-19 17:43:26,708 - INFO - 127.0.0.1 - - [19/Apr/2026 17:43:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:43:53,064 - INFO - 127.0.0.1 - - [19/Apr/2026 17:43:53] "POST /buscar HTTP/1.1" 200 -
+2026-04-19 17:46:09,572 - INFO - 127.0.0.1 - - [19/Apr/2026 17:46:09] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 17:46:09,953 - INFO - 127.0.0.1 - - [19/Apr/2026 17:46:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 17:51:24,433 - INFO - 127.0.0.1 - - [19/Apr/2026 17:51:24] "GET /descargar/goihgoirgh_1776612119.xlsx HTTP/1.1" 200 -
+2026-04-19 17:51:38,577 - INFO - 127.0.0.1 - - [19/Apr/2026 17:51:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-04-19 17:51:38,581 - INFO - 127.0.0.1 - - [19/Apr/2026 17:51:38] "GET / HTTP/1.1" 200 -
+2026-04-19 17:51:38,879 - INFO - 127.0.0.1 - - [19/Apr/2026 17:51:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 19:24:02,461 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-19 19:24:02,461 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-19 19:24:09,709 - INFO - 127.0.0.1 - - [19/Apr/2026 19:24:09] "GET /login HTTP/1.1" 200 -
+2026-04-19 19:24:09,952 - INFO - 127.0.0.1 - - [19/Apr/2026 19:24:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-19 19:24:26,405 - INFO - 127.0.0.1 - - [19/Apr/2026 19:24:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-04-19 19:24:26,420 - INFO - 127.0.0.1 - - [19/Apr/2026 19:24:26] "GET /analisis HTTP/1.1" 200 -
+2026-04-19 19:25:50,319 - INFO - 127.0.0.1 - - [19/Apr/2026 19:25:50] "POST /procesar HTTP/1.1" 200 -
+2026-04-19 19:25:50,339 - INFO - 127.0.0.1 - - [19/Apr/2026 19:25:50] "GET /static/nube_fav_1776619511.png HTTP/1.1" 200 -
+2026-04-19 19:25:50,339 - INFO - 127.0.0.1 - - [19/Apr/2026 19:25:50] "GET /static/nube_con_1776619511.png HTTP/1.1" 200 -

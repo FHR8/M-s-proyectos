@@ -1,25 +1,38 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-.
 import os
 import re
 import logging
+#Counter -> Importamos el contador.
 from collections import Counter
+#Pandas -> Para la manipulación de datos estadísticos.
 import pandas as pd
+# Docx -> Para trabajar con documentos Word
 from docx import Document
+# Pdfplumber -> Para trabajar con documentos PDF
 import pdfplumber
+# Spacy -> Librería principal encargada de trabajar con lenguaje natural
 import spacy
+# STOP_WORDS -> Permite sólo obtener las palabras que tienen un significado propio (quitando preposiciones, conjunciones...)
 from spacy.lang.es.stop_words import STOP_WORDS
+# openpyxl -> Permite el trabajo con el excel (datos, colores, gráficos)
 from openpyxl import load_workbook
 from openpyxl.styles import Font, PatternFill
 from openpyxl.chart import PieChart, BarChart, Reference
 from openpyxl.formatting.rule import ColorScaleRule
+#Matplotlib -> Para el uso de gráficos en el programa
 import matplotlib
 matplotlib.use('Agg') 
 import matplotlib.pyplot as plt
+#Para la creación de la imagen de nube de palabras
 from wordcloud import WordCloud
 
+#Configuración del logging
 logging.basicConfig(filename='app_nlp.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', encoding='utf-8')
 
+
 class GestorArchivos:
+    #Basicamente, se encarga de comprobar la lectura de los archivos a analizar. Si son 
+    #Word o PDF los aceptará para continuar con el proceso, y si no nos dará un error.
     @staticmethod
     def leer_documento(ruta_archivo):
         try:

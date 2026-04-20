@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
-
+<!--Plantilla base-->
 {% block content %}
 <div class="w-full max-w-4xl mx-auto flex flex-col gap-8">
     
     <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
         <h1 class="text-2xl font-bold text-blue-900 mb-2 text-center">🧠 Nuevo Análisis NLP</h1>
         <p class="text-gray-500 text-sm mb-6 text-center">Sube los documentos y elige los nombres para tus reportes de Excel.</p>
-
+        <!--Formulario de procesamiento de archivos donde daremos los 2 documentos y los 3 nombres para los excel correspondientes-->
         <form action="/procesar" method="POST" enctype="multipart/form-data" id="uploadForm" class="max-w-2xl mx-auto">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -36,7 +36,7 @@
                 <input type="text" name="nombre_comb" placeholder="Ej: Reporte_Final_Debate" required
                     class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 text-center">
             </div>
-
+            <!--Botón para el procesamiento de datos (Tarda un poco)-->
             <button type="submit" id="btnSubmit" class="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-700 transition duration-300 shadow-md">
                 Procesar Textos y Generar Excels
             </button>
@@ -49,6 +49,7 @@
         </form>
     </div>
 
+    <!--Historial del usuario y botones de descarga si lo desease-->
     <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
         <h2 class="text-xl font-bold text-gray-800 mb-6 border-b pb-2">📂 Tu Historial de Informes</h2>
         
@@ -81,13 +82,14 @@
                     </tbody>
                 </table>
             </div>
+        <!--Para quien debuta, cuenta con este mensaje inicial-->
         {% else %}
             <p class="text-center text-gray-400 italic py-4">Aún no has generado ningún informe. ¡Sube tus primeros documentos arriba!</p>
         {% endif %}
     </div>
 
 </div>
-
+<!--scrip en javascript que permite ocultar los botones mientras se estén cargando los documentos-->
 <script>
     document.getElementById('uploadForm').addEventListener('submit', function() {
         document.getElementById('btnSubmit').classList.add('hidden');

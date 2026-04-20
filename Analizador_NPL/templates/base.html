@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<!--tailwindcss permite indicar descripciones de los formatos css directamente-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/" class="font-bold text-xl tracking-wider">🧠 NLP Estratégico</a>
                 </div>
-                
+                <!--Barra de navegación: Segun si logeado o no tiene un formato-->
                 <div class="flex space-x-4">
                     {% if 'user_id' in session %}
                         <span class="px-3 py-2 text-sm font-medium text-blue-200">Hola, {{ session['username'] }}</span>
@@ -28,7 +29,7 @@
             </div>
         </div>
     </nav>
-
+    <!--Dibujamos los mensajes de error-->
     <div class="max-w-4xl mx-auto mt-4 w-full px-4">
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
@@ -51,10 +52,12 @@
         {% endwith %}
     </div>
 
+    <!--Como se trata de la plantilla base para el login, aquí es donde se pide su suro por el propio login-->
     <main class="flex-grow flex items-center justify-center p-4">
         {% block content %}{% endblock %}
     </main>
 
+    <!--Pie de página-->
     <footer class="bg-gray-800 text-white text-center py-4 mt-auto text-sm">
         <p>&copy; 2026 Sistema Analizador de Lenguaje Natural</p>
     </footer>

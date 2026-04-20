@@ -75,9 +75,9 @@
             <div class="bg-white p-6 rounded-lg border shadow-sm mb-8 border-l-4 border-yellow-400">
                 <h3 class="text-lg font-bold text-gray-700 mb-4 text-center">Repeticiones de la palabra buscada</h3>
                 <div class="flex justify-between text-sm font-semibold mb-2">
-                    <span class="text-blue-700" id="statFavor">A Favor: 0 (0%)</span>
+                    <span class="text-blue-700" id="statFavor">Documento 1: 0 (0%)</span>
                     <span class="text-gray-800 font-bold bg-yellow-100 px-3 py-1 rounded-full" id="statTotal">Total: 0</span>
-                    <span class="text-red-700" id="statContra">En Contra: 0 (0%)</span>
+                    <span class="text-red-700" id="statContra">Documento 2: 0 (0%)</span>
                 </div>
                 <!--Barra que muestra la proporción de esa palabra en un documento y en otro-->
                 <div class="w-full bg-gray-200 rounded-full h-4 flex overflow-hidden shadow-inner">
@@ -88,11 +88,11 @@
             <!--Mostramos los 5 párrafos comparativos-->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                    <h3 class="font-bold text-blue-700 mb-3 border-b-2 border-blue-200 pb-2">Aparece en texto "A Favor":</h3>
+                    <h3 class="font-bold text-blue-700 mb-3 border-b-2 border-blue-200 pb-2">Aparece en el documento 1:</h3>
                     <ul id="resultadosFavor" class="text-sm text-gray-700 space-y-3 bg-white p-4 rounded border shadow-sm min-h-[100px]"></ul>
                 </div>
                 <div>
-                    <h3 class="font-bold text-red-700 mb-3 border-b-2 border-red-200 pb-2">Aparece en texto "En Contra":</h3>
+                    <h3 class="font-bold text-red-700 mb-3 border-b-2 border-red-200 pb-2">Aparece en el documento 2:</h3>
                     <ul id="resultadosContra" class="text-sm text-gray-700 space-y-3 bg-white p-4 rounded border shadow-sm min-h-[100px]"></ul>
                 </div>
             </div>

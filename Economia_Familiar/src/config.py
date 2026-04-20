@@ -1,6 +1,6 @@
 class Config:
     SECRET_KEY = 'B!1weNAt1T^%kvhUI*S^'
-#Clave para mensajes tipo "Contraseña no válida o similares".
+#Clave para mensajes tipo "Contraseña no válida o parecido".
 
 class DevelopmentConfig(Config):
     DEBUG=True
